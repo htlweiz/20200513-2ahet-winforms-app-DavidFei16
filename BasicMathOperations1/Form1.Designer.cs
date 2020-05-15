@@ -37,6 +37,9 @@
             this.lblResult = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnDiv = new System.Windows.Forms.Button();
+            this.btnSub = new System.Windows.Forms.Button();
+            this.btnMal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -129,12 +132,48 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // btnDiv
+            // 
+            this.btnDiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiv.Location = new System.Drawing.Point(540, 209);
+            this.btnDiv.Name = "btnDiv";
+            this.btnDiv.Size = new System.Drawing.Size(66, 62);
+            this.btnDiv.TabIndex = 9;
+            this.btnDiv.Text = "/";
+            this.btnDiv.UseVisualStyleBackColor = true;
+            this.btnDiv.Click += new System.EventHandler(this.btnDiv_Click);
+            // 
+            // btnSub
+            // 
+            this.btnSub.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSub.Location = new System.Drawing.Point(468, 209);
+            this.btnSub.Name = "btnSub";
+            this.btnSub.Size = new System.Drawing.Size(66, 62);
+            this.btnSub.TabIndex = 10;
+            this.btnSub.Text = "-";
+            this.btnSub.UseVisualStyleBackColor = true;
+            this.btnSub.Click += new System.EventHandler(this.btnSub_Click);
+            // 
+            // btnMal
+            // 
+            this.btnMal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMal.Location = new System.Drawing.Point(540, 141);
+            this.btnMal.Name = "btnMal";
+            this.btnMal.Size = new System.Drawing.Size(66, 62);
+            this.btnMal.TabIndex = 11;
+            this.btnMal.Text = "x";
+            this.btnMal.UseVisualStyleBackColor = true;
+            this.btnMal.Click += new System.EventHandler(this.btnMal_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnMal);
+            this.Controls.Add(this.btnSub);
+            this.Controls.Add(this.btnDiv);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblResult);
@@ -162,6 +201,9 @@
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnDiv;
+        private System.Windows.Forms.Button btnSub;
+        private System.Windows.Forms.Button btnMal;
     }
 }
 
