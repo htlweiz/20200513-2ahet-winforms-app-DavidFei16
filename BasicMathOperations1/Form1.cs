@@ -92,7 +92,7 @@ namespace BasicMathOperations1
                 {
                     result = num1 / num2;
                     lblResult.Text = Convert.ToString(result);
-                    lblResultType.Text = "Ergebnis";
+                    lblResultType.Text = "Quotient";
                 }
             }
 
@@ -117,7 +117,7 @@ namespace BasicMathOperations1
                 num2 = Convert.ToDouble(txtNumber2.Text);
                 result = num1 - num2;
                 lblResult.Text = Convert.ToString(result);
-                lblResultType.Text = "Ergebnis";
+                lblResultType.Text = "Differenz";
             }
 
             catch (Exception ex)
@@ -140,7 +140,7 @@ namespace BasicMathOperations1
                 num2 = Convert.ToDouble(txtNumber2.Text);
                 result = num1 * num2;
                 lblResult.Text = Convert.ToString(result);
-                lblResultType.Text = "Ergebnis";
+                lblResultType.Text = "Produkt";
             }
 
             catch (Exception ex)
